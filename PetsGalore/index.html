@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pets Galore Contact Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+
+        }
+
+        header {
+            background-color: #4100af;
+
+        }
+
+        .storename {
+            text-align: center;
+            font-family: 'Lilita One', cursive;
+            color: #ffffff;
+            padding-top: 20px;
+        }
+
+        /* Nav bar */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        .container>li {
+            flex: 1;
+
+        }
+
+        li a {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            font-size: .9em;
+            text-decoration: none;
+
+        }
+
+
+        li a:hover {
+            color: orange;
+
+        }
+
+        main {
+            margin: 2em;
+
+
+        }
+
+        h1 {
+            margin-top: 70px;
+            margin-bottom: 20px;
+            font-size: 3em;
+
+        }
+
+        p {
+            font-size: 21px;
+            font-weight: 500;
+            margin-bottom: 70px;
+
+        }
+
+
+        form {
+            background-color: #f4f4f2;
+            padding: 50px;
+
+        }
+
+        label {
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 10px;
+
+
+        }
+
+        input {
+            height: 30px;
+            font-weight: 300;
+            border: 2px solid #d2d2d2;
+            padding: 8px 14px;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 10px;
+
+        }
+
+        input#comments {
+            min-height: 200px;
+            line-height: 25px;
+            width: 96%;
+            display: block;
+            overflow: auto;
+
+
+        }
+
+
+        footer {
+            color: #ffffff;
+            background-color: #393535;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+
+        @media all and (max-width: 600px) {
+
+            .container {
+                flex-wrap: wrap;
+
+            }
+
+            .container>li {
+                flex-basis: 50%;
+
+            }
+        }
+
+        @media all and (max-width: 400px) {
+            .container>li {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2 class="storename">Pets Galore</h2>
+        <nav>
+            <ul class="container">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="">SALE</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>We're here to answer your questions and address any concerns or recomendations.Fill out the dorum below
+            and our customer service department will get back with you shortly.
+        </p>
+        <form action="#">
+            
+            <label for="firstName">* FIRST NAME</label>
+            <input id="firstName" required type="text" name="first_name"><br>
+
+            <label for="lastName">* LAST NAME</label>
+            <input id="lastName" required type="text" name="last_name"><br>
+
+
+            <label for="usersEmail">* EMAIL ADDRESS</label>
+            <input id="usersEmail" required type="email" name="emailAddress"><br>
+
+            <label for="phoneNumber">* PHONE NUMBER</label>
+            <input id="phoneNumber" type="text" name="phone_number" placeholder="(000) 000-0000" required><br>
+
+            <fieldset>
+                <legend id="contactMethod">CONTACT METHOD</legend>
+                <input type="radio" name="contactMethod" id="phonemethod" checked> <label for="phonemethod">PHONE</label><br>
+                <input type="radio" name="contactMethod" id="emailmethod"><label for="emailmethod">EMAIL</label><br>
+            </fieldset>
+
+
+            <fieldset>
+                <legend id="animalInquire">Animal</legend>
+                <h2><em>Select all that apply</em></h2>
+                <input type="checkbox" name="choice1" id="cat"><label for="cat">CAT</label><br>
+                <input type="checkbox" name="choice2" id="dog"><label for="dog">DOG</label><br>
+                <input type="checkbox" name="choice3" id="ferret"> <label for="ferret">FERRET</label><br>
+                <input type="checkbox" name="choice4" id="guineaPig"><label for="guineaPig">GUINEA PIG</label><br>
+                <input type="checkbox" name="choice5" id="hamster"><label for="hamster">HAMSTER</label><br>
+                <input type="checkbox" name="choice6" id="rat"> <label for="rat">RAT</label><br>
+                <input type="checkbox" name="choice7" id="lizard"> <label for="lizard">LIZARD</label><br>
+                <input type="checkbox" name="choice8" id="snake"> <label for="snake">SNAKE</label><br>
+                <input type="checkbox" name="choice6" id="turtle"> <label for="turtle">TURTLE</label><br>
+                <input type="checkbox" name="choice7" id="fish"> <label for="fish">FISH</label><br>
+                <label for="other">OTHER</label>
+                <input id="other" type="text" name="other" placeholder="Other"><br>
+            </fieldset>
+
+
+
+            <label for="comments">* MESSAGE</label>
+            <input id="comments" type="text" name="comments"><br>
+
+
+
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+        <footer>
+            <h3> Save $5 off $20 when you use discount code SHARI</h3>
+        </footer>
+    </main>
+</body>
+
+</html>
